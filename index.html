@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MatchMakers | Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      height: 100%;
+      background: linear-gradient(135deg, #c94b4b, #4b134f);
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      height: 40px;
+      border-radius: 10px;
+    }
+
+    .logo span {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 6px 14px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    section {
+      padding: 100px 30px;
+      color: white;
+      text-align: center;
+    }
+
+    .landing {
+      background: url('c:\\Users\\luepi\\Downloads\\123.webp') center/cover no-repeat;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .login-container {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 15px;
+      padding: 40px 30px;
+      max-width: 360px;
+      margin: 120px auto 0;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+      color: #fff;
+    }
+
+    .login-form {
+      display: grid;
+      gap: 15px;
+    }
+
+    .login-form input, .login-form button {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .login-form input {
+      background: rgba(255,255,255,0.9);
+      color: #333;
+    }
+
+    .login-form button {
+      background: linear-gradient(45deg, #ff758c, #ff7eb3);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-form button:hover {
+      transform: scale(1.03);
+    }
+
+    #services {
+      background-color: #9c27b0;
+    }
+
+    #plans {
+      background-color: #7b1fa2;
+    }
+
+    #contact {
+      background-color: #4a0072;
+    }
+
+    .section-title {
+      font-size: 2.3rem;
+      margin-bottom: 15px;
+    }
+
+    .section-text {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .login-container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">
+    <img src="c:\Users\luepi\Downloads\123.webp" alt="MatchMakers Logo" />
+    <span>MatchMakers</span>
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Home + Login Section -->
+<section id="home" class="landing">
+  <div class="overlay"></div>
+  <div class="login-container">
+    <h2>Login to MatchMakers</h2>
+    <form class="login-form">
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+  <p class="section-text">
+    We help you find the perfect match with verified profiles, personalized matchmaking, compatibility analysis, and privacy-focused communication.
+  </p>
+</section>
+
+<!-- Plans Section -->
+<section id="plans">
+  <h2 class="section-title">Membership Plans</h2>
+  <p class="section-text">
+    Start with a free plan or upgrade for premium benefits. Silver Plan at ₹999/month, Gold Plan at ₹1999/month, and Platinum for ₹2999/month with exclusive matchmaking support.
+  </p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2 class="section-title">Get in Touch</h2>
+  <p class="section-text">
+    Reach out to us at <strong>contact@matchmakers.in</strong> or visit our main office in Mumbai, India. We’re here to help you start your journey towards love.
+  </p>
+</section>
+
+</body>
+</html>
